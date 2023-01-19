@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* h1 {
+  background: aqua;
+} */
+
+p {
+  writing-mode: vertical-lr;
+}
