@@ -1,0 +1,10 @@
+/* Propriedades usadas para imagens - max-width para caber no container dela sem estourar e display block para preenche-lo totalmente */
+img {
+  width: 800px;
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  background-color: lightblue;
+}
