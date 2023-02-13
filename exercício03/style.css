@@ -1,0 +1,149 @@
+/* # Cores
+
+cinza-fundo: #f7f7f7
+cinza-texto: #c6c6c6
+vermelho: #ee2211
+
+# Tipografia
+
+fonte: Arial
+parágrafos: 20px
+Vantagens Bikcraft: 64px
+
+# Tamanhos
+
+conteúdo principal: máximo 1000px */
+
+body {
+  font-family: Arial;
+  background: #f7f7f7;
+  margin: 100px 15%;
+}
+
+p {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 40px;
+  text-decoration: double;
+}
+
+.header {
+  display: grid;
+  gap: 45px;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 70px;
+}
+
+.title {
+  grid-column: 1 / -1;
+  place-self: center;
+}
+
+nav {
+  grid-column: 1 / -1;
+  place-self: center;
+}
+
+nav ul {
+
+  display: grid;
+  /* padding: 0; */
+  list-style-type: none;
+  grid-template-columns: repeat(4, auto);
+  gap: 30px;
+  width: fit-content;
+  place-items: center;
+}
+
+li {
+  background-color: white;
+  text-align: center;
+  padding: 20px 40px;
+  width: max-content;
+  border-radius: 4px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  display: grid;
+}
+
+.image-infos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.bike {
+  max-width: 100%;
+  border-radius: 2px;
+}
+
+.content-infos {
+  place-self: center;
+  padding: 50px;
+  text-align: end;
+}
+
+.button {
+  background-color: #ee2211;
+  padding: 15px 30px;
+  border-radius: 4px;
+  color: white;
+}
+
+.marketing {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.benefits-title {
+  color: #c6c6c6;
+  font-size: 80px;
+  text-align: end;
+  padding: 80px;
+}
+
+.benefits {
+  background: white;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+}
+
+.icon {
+  grid-column: 1;
+  place-self: start end;
+  padding: 10px;
+}
+
+.benefits h3 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  grid-column: 2;
+  padding: 10px;
+}
+
+.benefits p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  grid-column: 2;
+  padding: 5px;
+}
+
+footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
