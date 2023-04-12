@@ -1,0 +1,249 @@
+/* # Cores
+
+cinza-fundo: #f7f7f7
+cinza-texto: #c6c6c6
+vermelho: #ee2211
+
+# Tipografia
+
+fonte: Arial
+parágrafos: 20px
+Vantagens Bikcraft: 64px
+
+# Tamanhos
+
+conteúdo principal: máximo 1000px */
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #f7f7f7;
+  font-family: Arial;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.title-logo {
+  height: 40px;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.header-menu {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 20px;
+}
+
+.header-menu li {
+  box-sizing: content-box;
+  background-color: #fff;
+  border: 2px solid #fff;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+}
+
+.header-menu li:hover {
+  border: 2px solid #ee2211;
+}
+
+main {
+  height: 100%;
+  background-color: #fff;
+  margin: 5% 10%
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 4px;
+  margin: 0 auto;
+  grid-template-rows: max-content;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  align-items: end;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px;
+}
+
+.description h2 {
+  font-size: 2.5rem;
+}
+
+.description p {
+  font-size: 1.3rem;
+}
+
+.description a {
+  width: fit-content;
+  padding: 0.8rem 2rem;
+  background-color: #ee2211;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: normal;
+  justify-self: end;
+}
+
+.description a:hover {
+  background-color: #900;
+}
+
+.introdution-cover img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.bike-photo {
+  width: 100%;
+  height: 100%;
+}
+
+.benefits {
+  box-sizing: border-box;
+  padding: 5rem 0.5rem 0 0;
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: right;
+  align-self: center;
+  color: #c6c6c6;
+  background-image: url('../assets/ex03/onda.svg');
+  background-color: #f7f7f7;
+  object-fit: cover;
+  /* word-break: break-all; */
+  height: 100%;
+}
+
+.show-benefit-details {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 5px auto 4fr;
+  gap: 15px;
+  padding: 35px;
+  box-sizing: border-box;
+}
+
+.details:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+
+.details:hover {
+  border-left: solid 5px #ee2211;
+}
+
+.details h3 {
+  font-size: 1.2rem;
+  grid-column: 3;
+}
+
+.details p {
+  grid-column: 3;
+  grid-row: 2;
+  font-size: 1rem;
+}
+
+.details img {
+  justify-self: end;
+}
+
+footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  padding: 20px;
+}
+
+@media (max-width: 900px) {
+  .main-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 4px;
+    margin: 0 auto;
+    grid-template-rows: max-content;
+  }
+
+  .benefits {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .title-logo {
+    height: 30px;
+    justify-content: center;
+    padding: 1.7rem;
+  }
+  
+  .header-menu {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .description {
+    text-align: center;
+    align-items: start;
+  }
+}
+
+@media (max-width: 566px) {
+  .title-logo {
+    height: 30px;
+    justify-content: center;
+    padding: 1.7rem;
+  }
+
+  .show-benefit-details {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .details {
+    padding: 10px;
+    grid-template-columns: 1fr 3fr;
+    gap: 5px;
+  }
+
+  .details h3 {
+    font-size: 1rem;
+  }
+
+  .details p {
+    padding: 5px;
+    font-size: 1rem;
+  }
+
+  main {
+    height: 110%;
+    background-color: #fff;
+    margin: 5% 0;
+    object-fit: cover;
+  }
+}
